@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {# Run `composer require symfony/webpack-encore-bundle`
+           and uncomment the following Encore helpers to start using Symfony UX #}
+        {% block stylesheets %}
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <link rel="shortcut icon" type="image/jpg" href="assets/favicon.ico"/>
+            {#{{ encore_entry_link_tags('app') }}#}
+        {% endblock %}
+
+        {% block javascripts %}
+            {#{{ encore_entry_script_tags('app') }}#}
+        {% endblock %}
+    </head>
+    <body>
+    <header>
+        <img src = "assets/twig.png" alt = "Twig logo" height = "250" width = "250"/>
+        <h1>Bucket List !</h1>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                </div>
+                    <a href="{{ path('home') }}">Home</a> |
+                    <a href="{{ path('aboutus') }}">About us</a> |
+                    <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+        {% block body %}
+
+        {% endblock %}
+    <footer>
+        <p>@BucketList - 2021</p>
+    </footer>
+    </body>
+</html>
