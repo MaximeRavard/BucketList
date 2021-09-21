@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    <h1>Wish details</h1>
+    <div class="content">
+        <p>{{ wishResult.title }}</p>
+        <p>{{ wishResult.description }}</p>
+        <p>{{ wishResult.author }}</p>
+{#
+        <p>{{ wishListResult.dateCreated }}</p>
+#}
+
+    </div>
+{% endblock %}

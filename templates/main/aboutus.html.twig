@@ -1,19 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MainController!{% endblock %}
+{% block title %}About{% endblock %}
 
 {% block body %}
-
-    <div class="about-us">
-        <h1>Bienvenue !</h1>
-
-        <ul>
-            {% for pers in personnes %}
-            <li>{{ pers["prenom"] }} {{ pers["nom"] }}</li>
-            {% endfor %}
-        </ul>
-    </div>
-
+    <h1>About</h1>
 {% endblock %}
 
 

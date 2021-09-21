@@ -44,10 +44,10 @@ class MainController extends AbstractController
     }
 
     /**
-     * @Route ("/test/demo/contact", name="demo_contact")
+     * @Route ("/contact", name="contact")
      */
     public function contact(): Response
     {
-        return $this->json(["contact" => "0695282478"]);
+        return $this->render('main/contact.html.twig');
     }
 }

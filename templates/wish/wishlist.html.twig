@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    <h1>Wish List</h1>
+    <div class="content">
+        <ul>
+            {% for element in wishListResult %}
+            <li><a href="{{ path('wishDetail', {id:element.id}) }}">{{ element.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

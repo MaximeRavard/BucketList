@@ -1,5 +1,5 @@
 
-li{color: #B0413E;}
+/*li{color: #B0413E;}
 
 header{
     background-color: #5eb5e0;
@@ -40,10 +40,15 @@ footer{
     font-size: xx-large;
 }
 
-a:active{
+!*a:active{
     color: #f1f2f3;
 }
 
 a:hover{
     color: #f1f2f3;
+}*!*/
+
+.logo{
+    width:50px;
+    filter: invert(100%) sepia(14%) saturate(2%) hue-rotate(354deg) brightness(110%) contrast(101%);
 }
