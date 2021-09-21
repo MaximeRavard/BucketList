@@ -3,23 +3,48 @@ li{color: #B0413E;}
 
 header{
     background-color: #5eb5e0;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    margin-top: 0px;
+
+}
+
+.header-container{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding-left: 30px;
     margin-bottom: 30px;
-
+    font-size: x-large;
+    font-family: Impact;
 }
+
 
 footer{
     background-color: #5eb5e0;
     display: flex;
     align-items: center;
     horiz-align: center;
-    margin-top: 70px;
+    position: fixed;
+    height: 50px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    padding: 50px;
     margin-bottom: 0;
+    font-size: x-large;
+    font-family: Impact;
 }
 
-a{
-    font-family: "Bauhaus 93";
+.nav-container{
+    font-size: xx-large;
+}
+
+a:active{
+    color: #f1f2f3;
+}
+
+a:hover{
+    color: #f1f2f3;
 }
