@@ -8,9 +8,10 @@
         <p>{{ wishResult.title }}</p>
         <p>{{ wishResult.description }}</p>
         <p>{{ wishResult.author }}</p>
-{#
-        <p>{{ wishListResult.dateCreated }}</p>
-#}
-
+        <p>{{ wishResult.dateCreated|date("d/m/Y H:i") }}</p>
+    </div>
+    <div class="delete-but">
+        <p>Delete ? </p>
+        <a href="{{ path('wishRemove', {id:wishResult.id}) }}"><i class="fas fa-trash"></i></a>
     </div>
 {% endblock %}
